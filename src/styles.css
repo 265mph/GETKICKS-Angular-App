@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600;1,800&display=swap');
+
+:root {
+    --color-white: #fcfcfc;
+    --color-black: #212121;
+    --color-neon-green: #39FF14;
+    --color-background: #f3f3f3;
+    --shadow-color: #e6e6e6;
+
+    --section-margin: 2rem 2rem;
+
+    --box-shadow: 0 0.2rem 0.5rem #a2a2a2;
+    --button-radius: .3rem;
+} 
+
+.dark-theme-variables {
+    --color-white: #2e2e2e;
+    --color-black: #f6f6f6;
+    --color-neon-green: #39FF14;
+    --color-background: #0f0e17;
+    --shadow-color: #40404e;
+
+    --box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
