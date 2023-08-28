@@ -1,0 +1,237 @@
+/* ############# HEADER STYLING ############# */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: var(--section-margin);
+}
+
+header .my-logo h2 {
+    font-style: italic;
+    font-weight: 800;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+header .my-logo span {
+    color: var(--color-neon-green);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+}
+
+nav li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+nav li a.active {
+    border-bottom: 0.2rem solid var(--color-neon-green);
+}
+
+header .access-buttons a {
+    font-size: 0.8rem;
+    margin-right: 1.5rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+header .access-buttons .register-button {
+    background-color: var(--color-neon-green);
+    color: var(--color-white);
+    padding: 0.4rem 1rem;
+    border-radius: var(--button-radius);
+    margin-right: 0%;
+    box-shadow: var(--box-shadow);
+    transition: all 400ms ease-in-out;
+}
+
+header .access-buttons .register-button:hover {
+    box-shadow: none;
+}
+
+
+
+/* ############# HOME-HERO STYLING ############# */
+
+
+
+.home-hero {
+    margin: var(--section-margin);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: auto;
+}
+
+.home-hero .hero-info {
+    margin: 6rem 0 0 4rem;
+}
+
+.home-hero .hero-info h2 {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-black);
+}
+
+.home-hero .hero-info h2 span {
+    color: var(--color-neon-green);
+}
+
+.home-hero .hero-info p {
+    margin: 0.8rem 0 1.5rem 0;
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: var(--color-black);
+    /* width: 80%; */
+}
+
+.home-hero .shop-now a {
+    background-color: var(--color-neon-green);
+    color: #f2f2f2;
+    padding: 0.4rem 1rem;
+    border-radius: var(--button-radius);
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+    transition: all 400ms ease-in-out;
+}
+
+.home-hero .shop-now a:hover {
+    box-shadow: none;
+}
+
+.home-hero .hero-img {
+    margin: 2rem 0 0 3rem;
+}
+
+.home-hero .hero-img .img-background {
+    background-color: var(--shadow-color);
+    border-radius: .6rem;
+    height: 400px;
+    width: 370px;
+    box-shadow: var(--box-shadow);
+}
+
+.home-hero .hero-img .img-background .sale-banner{
+    background-color: #ff1c42;
+    color: #f2f2f2;
+    height: 5.2rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0 0 .7rem .7rem;
+}
+
+.home-hero .hero-img .img-background .sale-banner h3 {
+    margin-left: .65rem;
+    font-style: italic;
+}
+
+.home-hero .hero-img img {
+    width: 100%;
+    transform: rotate(-30deg);
+}
+
+.home-hero .hero-img .img-background .img-info {
+    float: inline-end;
+    margin: 0rem 2rem 1rem 0;
+    border-right: 3px solid var(--color-black);
+    padding: 1.1rem .6rem;
+}
+
+.home-hero .hero-img .img-background .img-info h4 {
+    margin-bottom: .8rem;
+    font-style: italic;
+}
+
+.home-hero .hero-img .img-background .img-info a {
+    background-color: var(--color-neon-green);
+    border-radius: var(--button-radius);
+    color: #f2f2f2;
+    padding: .4rem 1.3rem;
+    margin-top: 1.5rem;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: var(--box-shadow);
+    transition: all 400ms ease-in-out;
+}
+
+.home-hero .hero-img .img-background .img-info a:hover {
+    box-shadow: none;
+}
+
+
+
+/* ############# HOME-HERO STYLING ############# */
+
+
+
+
+@media screen and (max-width: 1200px){
+    .home-hero {
+       margin: 8rem 0 0 0;
+       grid-template-columns: 1fr;
+       place-items: center;
+    }
+
+    .home-hero .hero-info {
+        margin: 0;
+        text-align: center;
+    }
+
+    .home-hero .hero-info p {
+        text-align: center;
+        margin: 1.3rem 9rem 1.8rem 9rem;
+    }
+
+    .home-hero .hero-img {
+        place-self: center;
+        margin: 6rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header .my-logo h2{
+        margin-bottom: .8rem;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-bottom: 1.4rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .home-hero{
+        margin-top: 4rem;
+    }
+
+    .home-hero .hero-info h2 {
+        font-size: 3rem;
+    }
+
+    .home-hero .hero-info p {
+        margin: 0.5rem 2rem 2rem 2rem;
+        font-size: .75rem;
+    }
+
+    .home-hero .hero-img .img-background {
+        width: 300px;
+        height: 370px
+    }
+}

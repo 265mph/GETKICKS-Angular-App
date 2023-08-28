@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-logo {
+    margin: 1rem 0 4rem;
+    text-align: center;
+}
+
+.my-logo h2 {
+    font-style: italic;
+    font-weight: 800;
+    color: var(--color-black);
+    cursor: pointer;
+    font-size: 2.7rem;
+}
+
+span {
+    color: var(--color-neon-green);
+}
+
+.login-form {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    width: 500px;
+    height: 400px;
+    padding: 2rem 2.5rem;
+    border-radius: .6rem;
+}
+
+.login-form h2 {
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.login-form p {
+    font-weight: 600;
+    font-size: .7rem;
+    margin-bottom: .4rem;
+    color: var(--color-black);
+}
+
+.login-form input {
+    padding: .8rem .4rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-neon-green);
+    color: var(--color-black);
+    border-radius: var(--button-radius);
+}
+
+#forgot {
+    font-size: .7rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.login-form button {
+    width: 100%;
+    padding: .7rem 0;
+    color: var(--color-white);
+    background-color: var(--color-neon-green);
+    font-weight: 700;
+    box-shadow: var(--box-shadow);
+    margin: .3rem 0 1rem 0;
+    transition: all 300ms ease-in-out;
+    border-radius: var(--button-radius);
+}
+
+.login-form button:hover {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .login-form h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .login-form {
+        width: auto;
+    }
+
+}
