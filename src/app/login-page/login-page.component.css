@@ -117,6 +117,10 @@ header .my-logo {
     .login-form h2 {
         font-size: 1.2rem;
     }
+
+    .my-logo h2 {
+        font-size: 1.7rem;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -124,4 +128,19 @@ header .my-logo {
         width: auto;
     }
 
+    header {
+        margin-top: 1.5rem;
+    }
+
+    header .back-home {
+        margin-left: 1.1rem ;
+    }
+
+    .back-home p {
+        display: none;
+    }
+
+    .my-logo h2 {
+        font-size: 1rem
+    }
 }
