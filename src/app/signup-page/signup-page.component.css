@@ -19,7 +19,7 @@ header .back-home a {
 header  .back-home a:hover {
     background-color: #d7d7d7;
     width: fit-content;
-    padding: .4rem;
+    padding: .2rem;
     border-radius: 1rem;
 }
 
@@ -44,7 +44,7 @@ header .my-logo {
     color: var(--color-black);
     cursor: pointer;
     font-size: 2.7rem;
-}``
+}
 
 .my-logo h2 span {
     color: var(--color-neon-green);
