@@ -4,9 +4,44 @@
     align-items: center;
 }
 
-.my-logo {
-    margin: 1rem 0 4rem;
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 5%;
+    align-items: center;
+    margin: 1rem 0 4rem 0;
+}
+
+header  .back-home {
+    margin-left: 2rem;
+}
+
+header .back-home a {
+    display: flex;
+    align-items: center;
+    color: var(--color-black);
+}
+
+header  .back-home a:hover {
+    background-color: #d7d7d7;
+    width: fit-content;
+    padding: .4rem;
+    border-radius: 1rem;
+}
+
+header .back-home a p {
+    font-size: 14px;
+    margin-left: .5rem;
+}
+
+header .back-home a span {
+    color: var(--color-black);
+    font-size: 14px;
+}
+
+header .my-logo {
     text-align: center;
+    justify-self: center;
 }
 
 .my-logo h2 {
@@ -17,8 +52,9 @@
     font-size: 2.7rem;
 }
 
-span {
+.my-logo h2 span {
     color: var(--color-neon-green);
+    /* font-size: 2.7rem; */
 }
 
 .login-form {
