@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
+  loginUsername!: string;
+  loginPassword!: string;
 
+  submitForm() {
+    alert(`Welcome back ${this.loginUsername}`)
+  }
 }

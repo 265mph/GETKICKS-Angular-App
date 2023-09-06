@@ -2,7 +2,7 @@
     <div class="back-home">
         <a routerLink="/">
             <span class="material-icons-sharp">arrow_back</span>
-            <p>GO BACK HOME</p>
+            <p>BACK</p>
         </a>
     </div>
     <div class="my-logo">
@@ -12,16 +12,19 @@
 
 <div class="container">
     <div class="login-form">
-        <form action="">
-            <h2>LOGIN</h2>
+        <form action="" (ngSubmit)="submitForm()">
+            <h2>LOG IN</h2>
             
-            <p>EMAIL:</p>
-            <input type="email" placeholder="Email">
+            <p>USERNAME:</p>
+            <input type="text" placeholder="Username" name='loginUsername' [(ngModel)] = 'loginUsername' #usernameInput = 'ngModel' required>
+            <div class="error-message" *ngIf="usernameInput.invalid && usernameInput.touched">
+                <p>Please enter your username</p>
+            </div>
             
             <p>PASSWORD:</p>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" name='loginPassword' [(ngModel)] = 'loginPassword' required>
             
-            <button>LOGIN</button>
+            <button>LOG IN</button>
             
             <p id="forgot">Forgot Password?</p>
         </form>

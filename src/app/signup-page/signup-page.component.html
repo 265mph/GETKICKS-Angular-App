@@ -2,7 +2,7 @@
     <div class="back-home">
         <a routerLink="/">
             <span class="material-icons-sharp">arrow_back</span>
-            <p>GO BACK HOME</p>
+            <p>BACK</p>
         </a>
     </div>
     <div class="my-logo">
@@ -12,26 +12,23 @@
 
 <div class="container"> 
     <div class="register-form">
-        <form action="">
+        <form action="" (ngSubmit)="submitRegistration()">
 
-            <h2>REGISTER</h2>
+            <h2>SIGN UP</h2>
         
             <p>EMAIL:</p>
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" required>
 
-            <p>FIRSTNAME:</p>
-            <input type="text" placeholder="Firstname">
-
-            <p>LASTNAME:</p>
-            <input type="text" placeholder="Lastname">
+            <p>USERNAME:</p>
+            <input type="text" placeholder="Username" name="signupUsername" [(ngModel)] = 'signupUsername' required>
         
             <p>PASSWORD:</p>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" required>
 
             <p>CONFIRM PASSWORD:</p>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" required>
         
-            <button>REGISTER</button>
+            <button>SIGN UP</button>
         
             <p id="existing">Already have an account? Login <a href="" routerLink="/Login">here</a></p>
         </form>

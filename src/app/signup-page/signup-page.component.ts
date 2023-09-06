@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup-page.component.css']
 })
 export class SignupPageComponent {
+  signupUsername!: string;
 
+  submitRegistration() {
+    alert(`Thank you for joining us ${this.signupUsername}`)
+  }
 }
