@@ -1,0 +1,36 @@
+<header>
+    <div class="back-home">
+        <a routerLink="/">
+            <span class="material-icons-sharp">arrow_back</span>
+            <p>BACK</p>
+        </a>
+    </div>
+    <div class="my-logo">
+        <a routerLink="/"><h2><span>GET</span>-KICKS</h2></a>
+    </div>
+</header>
+
+<div class="container"> 
+    <div class="register-form">
+        <form action="" (ngSubmit)="submitRegistration()">
+
+            <h2>SIGN UP</h2>
+        
+            <p>EMAIL:</p>
+            <input type="email" placeholder="Email" required>
+
+            <p>USERNAME:</p>
+            <input type="text" placeholder="Username" name="signupUsername" [(ngModel)] = 'signupUsername' required>
+        
+            <p>PASSWORD:</p>
+            <input type="password" placeholder="Password" required>
+
+            <p>CONFIRM PASSWORD:</p>
+            <input type="password" placeholder="Password" required>
+        
+            <button>SIGN UP</button>
+        
+            <p id="existing">Already have an account? Login <a href="" routerLink="/Login">here</a></p>
+        </form>
+    </div>    
+</div>
