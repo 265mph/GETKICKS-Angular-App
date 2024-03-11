@@ -15,13 +15,13 @@
         <form action="" (ngSubmit)="submitForm()">
             <h2>LOG IN</h2>
             
-            <p>USERNAME:</p>
+            <p>USERNAME</p>
             <input type="text" placeholder="Username" name='loginUsername' [(ngModel)] = 'loginUsername' #usernameInput = 'ngModel' required>
             <div class="error-message" *ngIf="usernameInput.invalid && usernameInput.touched">
                 <p>Please enter your username</p>
             </div>
             
-            <p>PASSWORD:</p>
+            <p>PASSWORD</p>
             <input type="password" placeholder="Password" name='loginPassword' [(ngModel)] = 'loginPassword' required>
             
             <button>LOG IN</button>

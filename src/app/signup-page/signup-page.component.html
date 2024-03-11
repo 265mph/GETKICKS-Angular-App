@@ -16,19 +16,19 @@
 
             <h2>SIGN UP</h2>
         
-            <p>EMAIL:</p>
+            <p>EMAIL</p>
             <input type="email" placeholder="Email" name="signupEmail" required>
 
-            <p>USERNAME:</p>
+            <p>USERNAME</p>
             <input type="text" placeholder="Username" name="signupUsername" [(ngModel)] = 'signupUsername' #usernameInput = 'ngModel' required>
             <div class="error-message" *ngIf="usernameInput.invalid && usernameInput.dirty">
                 <p>Please create your username</p>
             </div>
 
-            <p>PASSWORD:</p>
+            <p>PASSWORD</p>
             <input type="password" placeholder="Password" name="signupPassword" required>
 
-            <p>CONFIRM PASSWORD:</p>
+            <p>CONFIRM PASSWORD</p>
             <input type="password" placeholder="Password" required>
         
             <button>SIGN UP</button>

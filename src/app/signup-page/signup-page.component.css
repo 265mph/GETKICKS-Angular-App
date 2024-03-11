@@ -11,6 +11,7 @@ header  .back-home {
 }
 
 header .back-home a {
+    font-weight: 600;
     display: flex;
     align-items: center;
     color: var(--color-black);
@@ -20,6 +21,7 @@ header  .back-home a:hover {
     color: var(--color-neon-green);
     width: fit-content;
     border-radius: 1rem;
+    transition: 200ms ease-in;
 }
 
 header .back-home a p {
@@ -97,22 +99,26 @@ header .my-logo {
     background-color: var(--color-neon-green);
     font-weight: 700;
     box-shadow: var(--box-shadow);
-    margin: .3rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     transition: all 300ms ease-in-out;
     border-radius: var(--button-radius);
+}
+
+.register-form button:hover {
+    box-shadow: none;
+    transition: 300ms ease-in;
 }
 
 #existing {
     font-size: .7rem;
     text-align: center;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--color-black);
 }
 
 .register-form #existing a {
-    text-decoration: underline;
-    color: var(--color-black);
+    color: var(--color-neon-green);
 }
 
 .register-form #existing a:visited {
