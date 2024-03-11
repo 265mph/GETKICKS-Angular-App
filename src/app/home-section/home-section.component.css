@@ -87,7 +87,8 @@ header .access-buttons .register-button:hover {
 }
 
 .home-hero .hero-info p {
-    margin: 0.8rem 0 1.5rem 0;
+    margin: 2rem 0 1.5rem 0;
+    width: 80%;
     font-size: 0.9rem;
     line-height: 20px;
     color: var(--color-black);
@@ -115,7 +116,7 @@ header .access-buttons .register-button:hover {
 
 .home-hero .hero-img .img-background {
     background-color: var(--shadow-color);
-    border-radius: .6rem;
+    border-radius: .4rem;
     height: 400px;
     width: 370px;
     box-shadow: var(--box-shadow);
