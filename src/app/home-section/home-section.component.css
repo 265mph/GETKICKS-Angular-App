@@ -32,6 +32,7 @@ nav li a {
     font-weight: 600;
     text-decoration: none;
     color: var(--color-black);
+    padding-bottom: .3rem;
 }
 
 nav li a.active {
@@ -87,7 +88,7 @@ header .access-buttons .register-button:hover {
 }
 
 .home-hero .hero-info p {
-    margin: 2rem 0 1.5rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     width: 80%;
     font-size: 0.9rem;
     line-height: 20px;

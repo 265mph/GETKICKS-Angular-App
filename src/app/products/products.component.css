@@ -18,9 +18,14 @@
     width: auto;
     height: 292px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     cursor: pointer;
+}
+
+.product-frame .product-img i {
+    align-self: center;
 }
 
 .product-frame .product-img img {
