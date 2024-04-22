@@ -1,22 +1,21 @@
 <!-- <h2>PRODUCTS</h2> -->
 
 <div class="products-container">
-    <div class="product-frame">
+    <div class="product-frame" *ngFor = 'let product of products'>
         <div class="product-img">
-            <img src="assets/img/collection-7.png" alt="">
-            <i class="bi bi-heart"></i>
+            <img src="{{product.productImage}}" alt="">
         </div>
         <div class="product-info">
             <div class="product-title">
-                <h4>Nike Dunk High Retro</h4>
-                <p>$195.00</p>
+                <h4>{{product.productName}} <span><i class="bi bi-heart"></i></span></h4>
+                <p>{{product.productPrice}}</p>
             </div>
             <div class="add-to-cart">
                 <button><h5>Add to cart</h5></button>
             </div>
         </div>
     </div>
-    <div class="product-frame">
+    <!-- <div class="product-frame">
         <div class="product-img">
             <img src="assets/img/collection-3.png" alt="">
         </div>
@@ -57,5 +56,5 @@
                 <button><h5>Add to cart</h5></button>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

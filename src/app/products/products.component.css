@@ -39,6 +39,9 @@
 }
 
 .product-frame .product-info .product-title h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     font-style: italic;
 }
 
