@@ -45,6 +45,14 @@
     font-style: italic;
 }
 
+.product-frame .product-info .product-title h4 span {
+    cursor: pointer;
+}
+
+.red-heart {
+    color: red;
+}
+
 .product-frame .product-info .add-to-cart button{
     background-color: var(--color-neon-green);
     color: var(--color-white);
