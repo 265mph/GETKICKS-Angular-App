@@ -17,4 +17,5 @@ export class ProductsComponent {
   toggleHeart(product: ProductInfo) {
     product.isHeartClicked = !product.isHeartClicked;
   }
+
 }

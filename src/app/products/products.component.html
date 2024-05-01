@@ -7,11 +7,12 @@
         </div>
         <div class="product-info">
             <div class="product-title">
-                <h4>{{product.productName}} <span><i (click)="toggleHeart(product)" [ngClass]="{'red-heart': product.isHeartClicked}" class="bi bi-heart-fill"></i></span></h4>
+                <h4>{{product.productName}}</h4> 
                 <p>{{product.productPrice}}</p>
             </div>
             <div class="add-to-cart">
-                <button><h5>Add to cart</h5></button>
+                <span><i (click)="toggleHeart(product)" *ngIf="product.isHeartClicked" class="bi bi-check-lg"></i></span>
+                <span><i (click)="toggleHeart(product)" *ngIf="!product.isHeartClicked" class="bi bi-plus-lg"></i></span>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
 }
 
 .product-frame {
-    border: 1px solid #d8d8d8;
+    border: 1px solid #a0a0a0;
     border-radius: .7rem;
     width: auto;
     padding: .8rem;
@@ -36,16 +36,17 @@
 
 .product-frame .product-info {
     margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-frame .product-info .product-title h4 {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-style: italic;
 }
 
-.product-frame .product-info .product-title h4 span {
+.product-frame .product-info  span i {
+    font-size: 30px;
     cursor: pointer;
 }
 
