@@ -5,15 +5,15 @@
 
     <nav>
         <ul>
-            <li><a class="active" href="">HOME</a></li>
-            <li><a href="">PRODUCTS</a></li>
+            <li><a routerLink="" href="">HOME</a></li>
+            <li><a routerLink="/Products">PRODUCTS</a></li>
             <li><a href="">CART</a></li>
         </ul>
     </nav>
 
     <div class="access-buttons">
         <a href="" routerLink="/Login">LOGIN</a>
-        <a class="register-button"  href="" routerLink="Sign-Up">SIGN UP</a>
+        <a class="register-button"  href="" routerLink="/Sign-Up">SIGN UP</a>
     </div>
 </header>
 
@@ -44,4 +44,4 @@
 
 <app-section-banner></app-section-banner>
 
-<app-products></app-products>
+<router-outlet></router-outlet>

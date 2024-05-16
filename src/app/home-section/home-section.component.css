@@ -35,8 +35,17 @@ nav li a {
     padding-bottom: .3rem;
 }
 
-nav li a.active {
-    border-bottom: 0.2rem solid var(--color-neon-green);
+nav li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    background: var(--color-neon-green);
+}
+
+nav li a:hover::after {
+    width: 100%;
+    transition: width 500ms;
 }
 
 header .access-buttons a {
