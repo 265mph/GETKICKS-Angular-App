@@ -3,11 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeSectionComponent } from './home-section/home-section.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
-import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/Home',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'Home',
     component: HomeSectionComponent
   },
 
@@ -22,8 +28,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'Products',
-    component: ProductsComponent
+    path: 'Cart',
+    component: CartComponent
   }
 ];
 

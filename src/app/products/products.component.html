@@ -3,16 +3,15 @@
 <div class="products-container">
     <div class="product-frame" *ngFor = 'let product of products'>
         <div class="product-img">
-            <img src="{{product.productImage}}" alt="">
+            <img src="{{product.image}}" alt="">
         </div>
         <div class="product-info">
             <div class="product-title">
-                <h4>{{product.productName}}</h4> 
-                <p>{{product.productPrice}}</p>
+                <h4>{{product.name}}</h4> 
+                <p>{{product.price}}</p>
             </div>
-            <div class="add-to-cart">
-                <span><i (click)="toggleHeart(product)" *ngIf="product.isHeartClicked" class="bi bi-check-lg"></i></span>
-                <span><i (click)="toggleHeart(product)" *ngIf="!product.isHeartClicked" class="bi bi-plus-lg"></i></span>
+            <div class="product-actions">
+                <span class="material-symbols-sharp" (click)="toggleActions(product)">{{ product.added ? 'check' : 'add'}}</span>
             </div>
         </div>
     </div>

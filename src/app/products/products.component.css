@@ -6,10 +6,11 @@
 }
 
 .product-frame {
-    border: 1px solid #a0a0a0;
+    border: 1px solid #c9c9c9;
     border-radius: .7rem;
     width: auto;
     padding: .8rem;
+    margin: .4rem;
 }
 
 .product-frame .product-img {
@@ -75,6 +76,11 @@
 
 .product-frame .product-info .add-to-cart h5 {
     font-size: 13px;
+}
+
+.product-actions span {
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 

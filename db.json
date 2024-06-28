@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Nike Dunk High Retro",
+            "price": "$195.00",
+            "image": "../assets/img/collection-7.png"
+        },
+        {
+            "id": "2",
+            "name": "Nike City Rep",
+            "price": "$200.00",
+            "image": "../assets/img/collection-3.png"
+        },
+        {
+            "id": "3",
+            "name": "Nike Air Max Pulse",
+            "price": "$84.00",
+            "image": "../assets/img/collection-2.png"
+        },
+        {
+            "id": "4",
+            "name": "Nike Pegasus FlyEase",
+            "price": "$60.00",
+            "image": "../assets/img/collection-9.png"
+        }
+    ]
+}

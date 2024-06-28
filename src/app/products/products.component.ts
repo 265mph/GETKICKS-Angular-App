@@ -1,21 +1,42 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductInfo } from './products.model';
+import { ProductService } from './product.service';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent {
-  products: ProductInfo[] = [
-    new ProductInfo ('Nike Dunk High Retro', '$195.00', '../assets/img/collection-7.png', false),
-    new ProductInfo ('Nike City Rep', '$200.00', '../assets/img/collection-3.png', false),
-    new ProductInfo ('Nike Air Max Pulse', '$84.00', '../assets/img/collection-2.png', false),
-    new ProductInfo ('Nike Pegasus FlyEase', '$60.00', '../assets/img/collection-9.png', false)
-  ];
+export class ProductsComponent implements OnInit{
+  products: ProductInfo[] = [ ];
 
-  toggleHeart(product: ProductInfo) {
-    product.isHeartClicked = !product.isHeartClicked;
+  constructor(private productService: ProductService) {};
+
+  ngOnInit(): void {
+    this.productService.getProducts().subscribe(
+      res => {
+        this.products = res
+      }
+    )
   }
 
+  getProducts() {
+    this.productService.getProducts().subscribe(
+      res => {
+        this.products = res
+      }
+    )
+  }
+
+  toggleActions(product: ProductInfo) {
+    product.added = !product.added
+
+    if(product.added) {
+      this.productService.addToCart(product, product.id).subscribe(
+        res => {
+          console.log(res)
+        }
+      )
+    }
+  }
 }

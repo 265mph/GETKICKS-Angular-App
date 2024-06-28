@@ -1,23 +1,4 @@
-<header>
-    <div class="my-logo">
-        <a routerLink="/"><h2><span>GET</span>-KICKS</h2></a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a routerLink="" href="">HOME</a></li>
-            <li><a routerLink="/Products">PRODUCTS</a></li>
-            <li><a href="">CART</a></li>
-        </ul>
-    </nav>
-
-    <div class="access-buttons">
-        <a href="" routerLink="/Login">LOGIN</a>
-        <a class="register-button"  href="" routerLink="/Sign-Up">SIGN UP</a>
-    </div>
-</header>
-
-
+<app-header></app-header>
 <section class="home-hero">
     <div class="hero-info">
         <h2><span>GET</span> LIMITED SNEAKERS <br> WITHOUT LIMITATION</h2>
@@ -44,4 +25,4 @@
 
 <app-section-banner></app-section-banner>
 
-<router-outlet></router-outlet>
+<app-products id="productSect"></app-products>

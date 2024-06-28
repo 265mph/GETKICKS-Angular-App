@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-section.component.css']
 })
 export class HomeSectionComponent {
+
+  
   
 }
